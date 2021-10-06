@@ -559,6 +559,26 @@ button {
   }
 }
 
+.online-control-img__play {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  z-index: 9;
+  top: 50%;
+  left: 50%;
+  background: #E3B873;
+  box-shadow: 0px 0px 0px 32px rgb(227 184 115);
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1030px) {
+  .online-control-img__play {
+    width: 12px;
+    height: 12px;
+    box-shadow: 0px 0px 0px 10px rgb(227 184 115);
+  }
+}
+
 .online-control-overlay {
   content: '';
   position: absolute;
@@ -855,6 +875,8 @@ button {
 .TYPES-OF-REPAIR__content-price-value {
   padding: 17px 21px;
   font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
   font-size: 17px;
   line-height: 25px;
   text-transform: uppercase;
@@ -909,6 +931,8 @@ button {
   box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
   border-radius: 30px;
   font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
   font-size: 18px;
   line-height: 25px;
   text-align: center;
@@ -1086,6 +1110,8 @@ button {
   line-height: 37px;
   text-transform: uppercase;
   color: #E3B873;
+  font-style: normal;
+  font-weight: normal;
 }
 
 @media screen and (max-width: 1030px) {
@@ -1461,7 +1487,7 @@ button {
   }
 }
 
-.MAP-container {
+.MAP-container-content {
   margin: 0;
   height: 953px;
   margin-top: -219px;
@@ -1472,7 +1498,7 @@ button {
 
 
 @media screen and (max-width: 1030px) {
-  .MAP-container {
+  .MAP-container-content {
     display: grid;
     grid-template-areas:"MAP-image-container"
                         "MAP-description"
@@ -1561,7 +1587,7 @@ button {
   height: 133px;
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 1030px) {
   .footer-container {
     display: none;
   }
